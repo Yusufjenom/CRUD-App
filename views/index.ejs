@@ -1,0 +1,39 @@
+
+<!-- include the header -->
+<%- include('partials/header')%>
+<!-- /include the header -->
+
+<!-- main body -->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <a href="/add-user" class="border-shadow">
+                <span class="text-gradient">New User 00</span>
+            </a>
+        </div>
+        <!-- form section -->
+        <form action="/" method="post">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Gender</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%- include('partials/table')%>
+                </tbody>
+            </table>
+        </form>
+
+        
+    </div>
+ </main>
+<!-- /main body -->
+<!-- include the footer -->
+<%- include('partials/footer')%>
+<!-- /include the footer -->
